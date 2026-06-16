@@ -1,0 +1,4 @@
+# CPU-only override — use with: docker compose -f docker-compose.yml -f docker-compose.cpu.yml up
+services:
+  ollama:
+    deploy: {}  # removes GPU reservation from base compose
